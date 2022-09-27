@@ -2,9 +2,12 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 
 //NAV BAR
+export const navHeight = "90px";
+
 export const Nav = styled.nav`
-  height: 90px;
+  height: ${navHeight};
   width: 100vw;
+  max-width: 100vw;
   display: flex;
   background: ${(props) => props.theme.darkTheme.darkGrey};
   align-items: center;
