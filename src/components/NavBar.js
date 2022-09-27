@@ -1,10 +1,10 @@
 import { Nav, NavList, NavItems } from "../componentsStyled/navStyles";
 import { TEXT_AND_CONTENT } from "../pages/text/textContent";
+import Switch from "./Switch";
 
 const NavBar = () => {
-  //const { NAV_TEXT } = TEXT_AND_CONTENT.NAVIGATION_BAR;
-  //console.log();
-  //BUG: Why doesn't this work?
+  const NAVIGATION_BAR = TEXT_AND_CONTENT.NAVIGATION_BAR;
+
   return (
     <Nav>
       <NavList>
@@ -15,7 +15,7 @@ const NavBar = () => {
           smooth={true}
           offset={-100}
         >
-          {TEXT_AND_CONTENT.NAVIGATION_BAR.HOME}
+          {NAVIGATION_BAR.HOME}
         </NavItems>
         <NavItems
           to="about-me"
@@ -24,7 +24,7 @@ const NavBar = () => {
           smooth={true}
           offset={-100}
         >
-          {TEXT_AND_CONTENT.NAVIGATION_BAR.ABOUT_ME}
+          {NAVIGATION_BAR.ABOUT_ME}
         </NavItems>
         <NavItems
           to="projects"
@@ -33,7 +33,7 @@ const NavBar = () => {
           smooth={true}
           offset={-100}
         >
-          {TEXT_AND_CONTENT.NAVIGATION_BAR.PROJECTS}
+          {NAVIGATION_BAR.PROJECTS}
         </NavItems>
         <NavItems
           to="contact"
@@ -42,11 +42,11 @@ const NavBar = () => {
           smooth={true}
           offset={-100}
         >
-          {TEXT_AND_CONTENT.NAVIGATION_BAR.CONTACT}
+          {NAVIGATION_BAR.CONTACT}
         </NavItems>
       </NavList>
 
-      <button>"🌙"</button>
+      <Switch />
     </Nav>
   );
 };
