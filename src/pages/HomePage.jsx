@@ -1,11 +1,43 @@
-import { DivSpacer } from "../componentsStyled/navStyles";
+import Switch from "../components/Switch";
+import { BtnGreenScroll } from "../componentsStyled/buttonsStyled";
+import {
+  FillScreen,
+  FlexContainerRow,
+  GreetingsDiv,
+} from "../componentsStyled/homePageStyles";
+
 const HomePage = () => {
   return (
-    <div id="home">
-      <DivSpacer>
-        <p>test</p>
-      </DivSpacer>
-    </div>
+    <FillScreen id="home">
+      <FlexContainerRow>
+        <GreetingsDiv>
+          <h4>
+            <span>-</span>Hello
+          </h4>
+          <h1>I'm Aleksander Grubstad Hoff</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+            deserunt maiores, explicabo necessitatibus similique dolorem
+            corrupti pariatur quaerat, cupiditate perspiciatis aperiam nam
+            aspernatur iste ratione, id autem totam qui voluptates?
+          </p>
+          <div>
+            <BtnGreenScroll
+              to="projects"
+              spy={true}
+              activeClass="nav-bar-link-active"
+              smooth={true}
+              offset={-100}
+            >
+              My projects
+            </BtnGreenScroll>
+          </div>
+        </GreetingsDiv>
+        <div>
+          <img src="#" alt="Portrait"></img>
+        </div>
+      </FlexContainerRow>
+    </FillScreen>
   );
 };
 
