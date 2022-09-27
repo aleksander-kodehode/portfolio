@@ -1,3 +1,6 @@
+import vectorTopRight from "../../img/vectorTopRight.png";
+import vectorBottomRight from "../../img/vectorBottomRight.svg";
+
 export const TEXT_AND_CONTENT = {
   NAVIGATION_BAR: {
     HOME: "Home",
@@ -9,7 +12,7 @@ export const TEXT_AND_CONTENT = {
     HEADING: "",
     GREETINGS_MSG: "",
     BUTTON: "",
-    IMAGE: "",
+    IMAGES: [vectorTopRight, vectorBottomRight],
   },
   PROJECTS_PAGE: {
     HEADING_PAGE: "",
