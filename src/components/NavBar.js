@@ -2,6 +2,9 @@ import { Nav, NavList, NavItems } from "../componentsStyled/navStyles";
 import { TEXT_AND_CONTENT } from "../pages/text/textContent";
 
 const NavBar = () => {
+  //const { NAV_TEXT } = TEXT_AND_CONTENT.NAVIGATION_BAR;
+  //console.log();
+  //BUG: Why doesn't this work?
   return (
     <Nav>
       <NavList>

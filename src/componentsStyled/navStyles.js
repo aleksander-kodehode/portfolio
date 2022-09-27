@@ -4,10 +4,9 @@ import { Link } from "react-scroll";
 //NAV BAR
 export const Nav = styled.nav`
   height: 90px;
-  width: 100%;
+  width: 100vw;
   display: flex;
   background: ${(props) => props.theme.darkTheme.darkGrey};
-  /**background-color: #242629;**/
   align-items: center;
   justify-content: flex-end;
   position: sticky;
