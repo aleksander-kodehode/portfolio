@@ -7,5 +7,5 @@ export const SectionHeading = styled.h1`
   display: block;
   width: 100%;
   margin-top: 0.625rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 `;

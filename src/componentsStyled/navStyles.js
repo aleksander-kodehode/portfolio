@@ -2,10 +2,10 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 
 //NAV BAR
-export const navHeight = "90px";
+export const navHeight = "60";
 
 export const Nav = styled.nav`
-  height: ${navHeight};
+  height: ${navHeight}px;
   width: 100vw;
   max-width: 100vw;
   display: flex;
@@ -21,7 +21,7 @@ export const NavList = styled.ul`
   margin: 0;
   padding: 0;
   display: flex;
-  flex: row;
+  justify-content: center;
 `;
 export const NavItems = styled(Link)`
   background: brown;
@@ -30,7 +30,7 @@ export const NavItems = styled(Link)`
   margin-right: 1.5rem;
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;

@@ -6,8 +6,11 @@ const theme = {
     white: "#FFFFFE",
     purple: "#7F5AF0",
     green: "#2CB67D",
+    switch: "#28292c",
   },
-  lightTheme: {},
+  lightTheme: {
+    switch: "#d8dbe0",
+  },
   fonts: {
     family: ["Roboto", "sans-serif"],
     fontSizes: {

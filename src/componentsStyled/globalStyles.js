@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
-
+import "@fontsource/inter";
+import "@fontsource/inter/700.css";
 const GlobalStyle = createGlobalStyle`
     /* FIXME: Remove scrollbars when everything is done */
   /*   *{
@@ -16,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
         overflow-x:hidden;
         margin: 0;
         padding: 0; 
-        font-family: sans-serif;
+        font-family: "Inter", sans-serif;
         /* #TODO: Fix font family */
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
