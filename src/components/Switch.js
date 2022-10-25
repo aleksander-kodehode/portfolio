@@ -1,10 +1,11 @@
-import { useContext, useState } from "react";
-import { themeContext } from "../App";
+import { useContext } from "react";
+import { themeContext } from "../context/themeContext";
 import "./Switch.css";
 const Switch = () => {
   const contextState = useContext(themeContext);
 
   const onToggle = () => {
+    //send state of toggle btn to the context
     contextState.setIsToggled(!contextState.isToggled);
     if (!contextState.isToggled) {
     }
