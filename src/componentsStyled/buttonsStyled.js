@@ -9,8 +9,8 @@ export const BtnGreenScroll = styled(Link)`
   font-weight: 700;
   text-align: center;
   transition: filter 0.2s ease-in-out;
-  color: ${(props) => props.theme.darkTheme.white};
-  background: ${(props) => props.theme.darkTheme.green};
+  color: ${(props) => props.theme.white};
+  background: ${(props) => props.theme.green};
   &:hover {
     filter: brightness(80%) contrast(200%);
   }

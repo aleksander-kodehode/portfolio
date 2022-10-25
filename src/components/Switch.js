@@ -1,15 +1,22 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { themeContext } from "../App";
 import "./Switch.css";
 const Switch = () => {
-  const [isToggled, setIsToggled] = useState(false);
+  const contextState = useContext(themeContext);
 
   const onToggle = () => {
-    setIsToggled(!isToggled);
+    contextState.setIsToggled(!contextState.isToggled);
+    if (!contextState.isToggled) {
+    }
   };
 
   return (
     <label className="toggle-switch">
-      <input type="checkbox" checked={isToggled} onChange={onToggle} />
+      <input
+        type="checkbox"
+        checked={contextState.isToggled}
+        onChange={onToggle}
+      />
       <span className="switch" />
     </label>
   );

@@ -1,12 +1,13 @@
-import { DivSpacer } from "../componentsStyled/navStyles";
+import ProjectContainer from "../components/ProjectContainer";
 import { SectionHeading } from "../componentsStyled/typographyStyled";
+
 const ProjectsPage = () => {
   return (
     <div id="projects">
-      <DivSpacer>
+      <>
         <SectionHeading>Projects</SectionHeading>
-        <p>test</p>
-      </DivSpacer>
+        <ProjectContainer />
+      </>
     </div>
   );
 };

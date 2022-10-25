@@ -1,4 +1,3 @@
-import Switch from "../components/Switch";
 import { BtnGreenScroll } from "../componentsStyled/buttonsStyled";
 import {
   FillScreen,
@@ -29,7 +28,7 @@ const HomePage = () => {
               smooth={true}
               offset={-100}
             >
-              My projects
+              MY PROJECTS
             </BtnGreenScroll>
           </div>
         </GreetingsDiv>

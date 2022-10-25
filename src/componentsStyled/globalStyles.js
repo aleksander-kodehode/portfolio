@@ -21,11 +21,11 @@ const GlobalStyle = createGlobalStyle`
         /* #TODO: Fix font family */
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        background: ${(props) => props.theme.darkTheme.dark};
-        color: ${(props) => props.theme.darkTheme.lightGrey};
+        background: ${(props) => props.theme.mainBackground};
+        color: ${(props) => props.theme.lightGrey};
     }
     h1, h2, h3, h4, h5, h6 {
-        color: ${(props) => props.theme.darkTheme.white}
+        color: ${(props) => props.theme.white}
     }
     .nav-bar-link-active {
         color: #7f5af0 !important;

@@ -9,7 +9,7 @@ export const Nav = styled.nav`
   width: 100vw;
   max-width: 100vw;
   display: flex;
-  background: ${(props) => props.theme.darkTheme.darkGrey};
+  background: ${(props) => props.theme.secondaryBackground};
   align-items: center;
   justify-content: flex-end;
   position: sticky;

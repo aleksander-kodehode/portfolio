@@ -14,7 +14,7 @@ export const Projects = styled.div`
   flex-direction: column;
   max-width: 30%;
   max-height: 700px;
-  background: ${(props) => props.theme.darkTheme.darkGrey};
+  background: ${(props) => props.theme.secondaryBackground};
   margin-right: 2rem;
   align-items: center;
   margin-bottom: 3rem;
