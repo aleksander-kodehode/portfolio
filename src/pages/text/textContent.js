@@ -17,6 +17,21 @@ export const TEXT_AND_CONTENT = {
     BUTTON: "",
     IMAGES: [vectorTopRight, vectorBottomRight],
   },
+  SKILLS: {
+    ICONS: [
+      "html5",
+      "css3",
+      "javascript",
+      "typescript",
+      "react",
+      "nodedotjs",
+      "mongodb",
+      "mysql",
+      "git",
+      "github",
+      "figma",
+    ],
+  },
   PROJECTS_PAGE: {
     HEADING_PAGE: "",
     PROJECT: [
