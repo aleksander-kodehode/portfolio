@@ -10,11 +10,12 @@ import { themeContext } from "./context/themeContext";
 import { darkTheme, lightTheme } from "./theme";
 
 const App = () => {
-  const [isToggled, setIsToggled] = useState(false);
-
+  const [isToggled, setIsToggled] = useState(true);
+  console.log(isToggled);
   return (
     <themeContext.Provider value={{ isToggled, setIsToggled }}>
-      <ThemeProvider theme={isToggled ? lightTheme : darkTheme}>
+      {/* BUG: Site flashes on reload due to the themeProvide  */}
+      <ThemeProvider theme={isToggled ? darkTheme : lightTheme}>
         <GlobalStyle />
         <NavBar />
         <HomePage />
