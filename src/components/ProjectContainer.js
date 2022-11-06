@@ -5,25 +5,27 @@ import {
   BtnGreen,
   ProjectHeading,
   ProjectImage,
-} from "../componentsStyled/ProjectContainerStyled";
+  ProjectParagraph,
+  ProjectImageContainer,
+} from "../componentsStyled/pageStyles/projectContainerStyled";
 import { TEXT_AND_CONTENT } from "../pages/text/textContent";
 
 const ProjectContainer = () => {
   const PROJECTS = TEXT_AND_CONTENT.PROJECTS_PAGE.PROJECT;
-
+  //TODO: Implement cards that flip? (https://github.com/AaronCCWong/react-card-flip)
   return (
     <ProjectsWrapper>
       {PROJECTS.map((proj, idx) => {
         return (
-          <Projects key={idx}>
+          <Projects className="projects-container" key={idx}>
             <ProjectHeading>{proj.HEADING}</ProjectHeading>
-            <div>
+            <ProjectImageContainer>
               <ProjectImage
                 alt="Preview screenshot of project"
                 src={proj.SCREENSHOT}
               />
-            </div>
-            <p>{proj.DESCRIPTION}</p>
+            </ProjectImageContainer>
+            <ProjectParagraph>{proj.DESCRIPTION}</ProjectParagraph>
             <ButtonWrapper>
               <BtnGreen
                 as="a"
