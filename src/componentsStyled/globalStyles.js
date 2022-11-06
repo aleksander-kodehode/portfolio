@@ -22,12 +22,14 @@ const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         background: ${(props) => props.theme.mainBackground};
-        color: ${(props) => props.theme.lightGrey};
-        transition: all 0.25s linear;
+        color: ${(props) => props.theme.paragraph};
+        transition: background 0.25s linear;
 
     }
     h1, h2, h3, h4, h5, h6 {
-        color: ${(props) => props.theme.white}
+        color: ${(props) => props.theme.heading};
+        transition: all 0.25s linear;
+
     }
     .nav-bar-link-active {
         color: #7f5af0 !important;
