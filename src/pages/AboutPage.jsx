@@ -1,7 +1,7 @@
-import { Link } from "react-scroll";
+//import { Link } from "react-scroll";
 import SkillsIcons from "../components/skills/SkillsIcons";
 import WaveBgAlt from "../components/WaveBgAlt";
-import { DivSpacer, navHeight } from "../componentsStyled/navStyles";
+import { DivSpacer } from "../componentsStyled/navStyles";
 import {
   AboutWrapper,
   SkillWrapper,
