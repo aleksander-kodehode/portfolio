@@ -1,40 +1,49 @@
 import { BtnGreenScroll } from "../componentsStyled/buttonsStyled";
+import { navHeight } from "../componentsStyled/navStyles";
 import {
   FillScreen,
   FlexContainerRow,
   GreetingsDiv,
-} from "../componentsStyled/homePageStyles";
+  ImgContainer,
+  PreHeading,
+  ProfilePic,
+  PurpleText,
+  WelcomeHeading,
+} from "../componentsStyled/pageStyles/homePageStyles";
+import { TEXT_AND_CONTENT } from "./text/textContent";
+
+const content = TEXT_AND_CONTENT.WELCOME_PAGE;
 
 const HomePage = () => {
   return (
     <FillScreen id="home">
       <FlexContainerRow>
         <GreetingsDiv>
-          <h4>
-            <span>-</span>Hello
-          </h4>
-          <h1>I'm Aleksander Grubstad Hoff</h1>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
-            deserunt maiores, explicabo necessitatibus similique dolorem
-            corrupti pariatur quaerat, cupiditate perspiciatis aperiam nam
-            aspernatur iste ratione, id autem totam qui voluptates?
-          </p>
+          <ImgContainer>
+            <ProfilePic src={content.IMAGES[2]} alt="Portrait"></ProfilePic>
+          </ImgContainer>
           <div>
+            <PreHeading>
+              <PurpleText>- </PurpleText>Hello
+            </PreHeading>
+            <WelcomeHeading>
+              I'm <PurpleText>Aleksander</PurpleText> Grubstad Hoff
+            </WelcomeHeading>
+          </div>
+          <p>Frontend developer | React</p>
+          <div>
+            {/* TODO: Make down arrow with animations */}
             <BtnGreenScroll
               to="projects"
               spy={true}
               activeClass="nav-bar-link-active"
               smooth={true}
-              offset={-100}
+              offset={-navHeight}
             >
               MY PROJECTS
             </BtnGreenScroll>
           </div>
         </GreetingsDiv>
-        <div>
-          <img src="#" alt="Portrait"></img>
-        </div>
       </FlexContainerRow>
     </FillScreen>
   );

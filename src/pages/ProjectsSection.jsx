@@ -1,14 +1,19 @@
 import ProjectContainer from "../components/ProjectContainer";
+import WaveBg from "../components/WaveBg";
 import { SectionHeading } from "../componentsStyled/typographyStyled";
-
+import { TEXT_AND_CONTENT } from "./text/textContent";
+const text = TEXT_AND_CONTENT.PROJECTS_PAGE;
 const ProjectsPage = () => {
   return (
-    <div id="projects">
-      <>
-        <SectionHeading>Projects</SectionHeading>
-        <ProjectContainer />
-      </>
-    </div>
+    <>
+      <WaveBg />
+      <div id="projects">
+        <>
+          <SectionHeading>{text.HEADING_PAGE}</SectionHeading>
+          <ProjectContainer />
+        </>
+      </div>
+    </>
   );
 };
 
