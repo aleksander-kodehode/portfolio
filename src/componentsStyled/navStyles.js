@@ -41,5 +41,8 @@ export const NavItems = styled(Link)`
 
 //AboutMe Section
 export const DivSpacer = styled.div`
-  height: 120vh;
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
