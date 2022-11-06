@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-scroll";
+import { device } from "./mediaQueriesBreakPoints";
 
 //NAV BAR
 export const navHeight = "60";
@@ -9,12 +10,20 @@ export const Nav = styled.nav`
   width: 100vw;
   max-width: 100vw;
   display: flex;
+  flex-direction: row;
   background: ${(props) => props.theme.secondaryBackground};
   align-items: center;
   justify-content: flex-end;
   position: sticky;
   top: 0;
   z-index: 1;
+  @media ${device.tabletS} {
+    flex-direction: column;
+    height: fit-content;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 export const NavList = styled.ul`
   list-style: none;
@@ -22,6 +31,11 @@ export const NavList = styled.ul`
   padding: 0;
   display: flex;
   justify-content: center;
+  @media ${device.tabletS} {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 export const NavItems = styled(Link)`
   background: brown;

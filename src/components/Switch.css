@@ -5,6 +5,11 @@
   height: 25px;
   margin: 0 6rem 0 1rem;
 }
+@media (max-width: 600px) {
+  .toggle-switch {
+    margin: 0 2.5rem 0 1rem;
+  }
+}
 .toggle-switch input[type="checkbox"] {
   display: none;
 }
@@ -13,6 +18,7 @@
   cursor: pointer;
   background-color: #7f5af0;
   border-radius: 25px;
+  width: 50px;
   top: 0;
   right: 0;
   bottom: 0;
