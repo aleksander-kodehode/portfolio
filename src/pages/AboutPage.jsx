@@ -20,10 +20,10 @@ const AboutMePage = () => {
           <AboutWrapper>
             <TextContentWrapper>
               <p>
-                I’m current learning how to code through “Kodehode”, in my spare
-                time I enjoy messing around with selfhosting services and apps
-                through Docker, playing interesting games that takes up way too
-                much time. One of my big passions is cooking and collecting
+                I’m currently learning how to code through “Kodehode”, in my
+                spare time I enjoy messing around with selfhosted services and
+                apps through Docker, playing interesting games that takes up way
+                too much time. One of my big passions is cooking and collecting
                 handmade Japanese knifes.
               </p>
               <p>
