@@ -1,5 +1,4 @@
 import WaveBgAlt from "../components/WaveBgAlt";
-import { DivSpacer } from "../componentsStyled/navStyles";
 import {
   ContactContainer,
   ContactSpacer,
