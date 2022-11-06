@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { TEXT_AND_CONTENT } from "../../pages/text/textContent";
+import { device } from "../mediaQueriesBreakPoints";
 import { navHeight } from "../navStyles";
 
 export const FlexContainerRow = styled.div`
@@ -10,6 +11,9 @@ export const FlexContainerRow = styled.div`
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+  @media ${device.tabletS} {
+    margin-bottom: 120px;
+  }
 `;
 export const FillScreen = styled.div`
   width: 100vw;
@@ -32,6 +36,10 @@ export const ImgContainer = styled.div`
   height: 300px;
   border-radius: 50%;
   overflow: hidden;
+  @media ${device.tabletS} {
+    width: 200px;
+    height: 200px;
+  }
 `;
 export const ProfilePic = styled.img`
   position: absolute;
@@ -51,8 +59,27 @@ export const ProfilePic = styled.img`
 export const PurpleText = styled.span`
   color: ${(props) => props.theme.purple};
 `;
-export const PreHeading = styled.h4``;
+export const PreHeading = styled.h4`
+  @media ${device.tabletS} {
+    text-align: center;
+  }
+  @media ${device.tablet} {
+    text-align: center;
+  }
+  @media ${device.laptop} {
+    text-align: center;
+  }
+`;
 export const WelcomeHeading = styled.h1`
   margin-top: -20px;
   margin-bottom: -15px;
+  @media ${device.tabletS} {
+    text-align: center;
+  }
+  @media ${device.tablet} {
+    text-align: center;
+  }
+  @media ${device.laptop} {
+    text-align: center;
+  }
 `;

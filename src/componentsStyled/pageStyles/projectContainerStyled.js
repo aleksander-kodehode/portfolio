@@ -1,13 +1,18 @@
 import styled from "styled-components";
 import { BtnGreenScroll } from "../buttonsStyled";
+import { device } from "../mediaQueriesBreakPoints";
 import { FlexContainerRow } from "./homePageStyles";
 
 export const ProjectsWrapper = styled(FlexContainerRow)`
   flex-wrap: wrap;
   width: 85%;
   max-width: 1400px;
+  display: flex;
   justify-content: center;
   margin-bottom: 70px;
+  @media ${device.tabletS} {
+    flex-direction: column;
+  }
 `;
 
 export const Projects = styled.div`
@@ -25,6 +30,14 @@ export const Projects = styled.div`
   box-shadow: rgba(127, 90, 240, 0.4) 0px 5px, rgba(127, 90, 240, 0.3) 0px 10px,
     rgba(127, 90, 240, 0.2) 0px 15px, rgba(127, 90, 240, 0.1) 0px 20px,
     rgba(127, 90, 240, 0.05) 0px 25px;
+  @media ${device.tabletS} {
+    max-width: 90%;
+    min-width: 250px;
+  }
+  @media ${device.tablet} {
+    max-width: 90%;
+    min-width: 250px;
+  }
 `;
 export const ProjectImageContainer = styled.div`
   position: relative;

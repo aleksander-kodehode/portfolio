@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Icon } from "@iconify/react";
+import { device } from "../../componentsStyled/mediaQueriesBreakPoints";
 
 export const IconWrapper = styled.div`
   display: flex;
@@ -13,4 +14,8 @@ export const Icons = styled(Icon)`
   height: 76px;
   margin-bottom: 10px;
   color: ${(props) => props.theme.purple};
+  @media ${device.tabletS} {
+    width: 47px;
+    height: 36px;
+  }
 `;

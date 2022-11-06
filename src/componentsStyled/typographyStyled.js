@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "./mediaQueriesBreakPoints";
 
 export const SectionHeading = styled.h1`
   font-size: ${(props) => props.theme.fonts.fontSizes.large};
@@ -18,5 +19,8 @@ export const Hyperlink = styled.a`
   &:hover,
   :active {
     filter: brightness(130%);
+  }
+  @media ${device.tabletS} {
+    font-size: 1.5rem;
   }
 `;

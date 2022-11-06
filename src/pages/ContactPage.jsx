@@ -1,6 +1,9 @@
 import WaveBgAlt from "../components/WaveBgAlt";
 import { DivSpacer } from "../componentsStyled/navStyles";
-import { ContactContainer } from "../componentsStyled/pageStyles/contactPageStyles";
+import {
+  ContactContainer,
+  ContactSpacer,
+} from "../componentsStyled/pageStyles/contactPageStyles";
 import { MainWrapperAlt } from "../componentsStyled/pageStyles/mainWrapperStyle";
 import {
   Hyperlink,
@@ -11,7 +14,7 @@ const ContactPage = () => {
     <>
       <WaveBgAlt />
       <MainWrapperAlt id="contact">
-        <DivSpacer>
+        <ContactSpacer>
           <SectionHeading>Contact Me</SectionHeading>
           <ContactContainer>
             <p>Feel free to contact me for any question you may have</p>
@@ -19,7 +22,7 @@ const ContactPage = () => {
               aleksander@grubstad.no
             </Hyperlink>
           </ContactContainer>
-        </DivSpacer>
+        </ContactSpacer>
       </MainWrapperAlt>
     </>
   );
