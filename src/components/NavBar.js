@@ -2,11 +2,13 @@ import { Nav, NavList, NavItems } from "../componentsStyled/navStyles";
 import { TEXT_AND_CONTENT } from "../pages/text/textContent";
 import Switch from "./Switch";
 import { navHeight } from "../componentsStyled/navStyles";
+import LanguageSwitcher from "./LanguageSwitcher";
 const NavBar = () => {
   const NAVIGATION_BAR = TEXT_AND_CONTENT.NAVIGATION_BAR;
 
   return (
     <Nav>
+      <LanguageSwitcher />
       <NavList>
         <li>
           <NavItems
