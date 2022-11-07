@@ -1,24 +1,18 @@
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
+import HttpApi from "i18next-http-backend";
 
-const resources = {
-  en: {
-    translation: {
-      app_name: "Portfolio",
+i18next
+  .use(initReactI18next)
+  .use(HttpApi)
+  .init({
+    lng: "en",
+    fallbackLng: "en",
+    interpolation: {
+      escapeValue: false,
     },
-  },
-  nb: {
-    translation: {
-      app_name: "Portofølje",
-    },
-  },
-};
-i18next.use(initReactI18next).init({
-  resources,
-  lng: "en",
-  interpolation: {
-    escapeValue: false,
-  },
-});
+    //TODO: Disable before production build
+    debug: true,
+  });
 
 export default i18next;
