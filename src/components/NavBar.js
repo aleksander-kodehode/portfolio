@@ -3,9 +3,11 @@ import { TEXT_AND_CONTENT } from "../pages/text/textContent";
 import Switch from "./Switch";
 import { navHeight } from "../componentsStyled/navStyles";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { useTranslation } from "react-i18next";
+
 const NavBar = () => {
   const NAVIGATION_BAR = TEXT_AND_CONTENT.NAVIGATION_BAR;
-
+  const { t } = useTranslation();
   return (
     <Nav>
       <LanguageSwitcher />
@@ -18,7 +20,7 @@ const NavBar = () => {
             smooth={true}
             offset={-navHeight}
           >
-            {NAVIGATION_BAR.HOME}
+            {t("navbar.home")}
           </NavItems>
         </li>
         <li>
@@ -29,7 +31,7 @@ const NavBar = () => {
             smooth={true}
             offset={-navHeight}
           >
-            {NAVIGATION_BAR.ABOUT_ME}
+            {t("navbar.about")}
           </NavItems>
         </li>
         <li>
@@ -40,7 +42,7 @@ const NavBar = () => {
             smooth={true}
             offset={-navHeight}
           >
-            {NAVIGATION_BAR.PROJECTS}
+            {t("navbar.projects")}
           </NavItems>
         </li>
         <li>
@@ -51,7 +53,7 @@ const NavBar = () => {
             smooth={true}
             offset={-navHeight}
           >
-            {NAVIGATION_BAR.CONTACT}
+            {t("navbar.contact")}
           </NavItems>
         </li>
       </NavList>
