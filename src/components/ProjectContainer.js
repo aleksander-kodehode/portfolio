@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   ButtonWrapper,
   Projects,
@@ -8,40 +9,42 @@ import {
   ProjectParagraph,
   ProjectImageContainer,
 } from "../componentsStyled/pageStyles/projectContainerStyled";
-import { TEXT_AND_CONTENT } from "../pages/text/textContent";
 
 const ProjectContainer = () => {
-  const PROJECTS = TEXT_AND_CONTENT.PROJECTS_PAGE.PROJECT;
+  const { t } = useTranslation();
+  const PROJECTS = t("projects.project", { returnObjects: true });
+
   //TODO: Implement cards that flip? (https://github.com/AaronCCWong/react-card-flip)
   return (
     <ProjectsWrapper>
       {PROJECTS.map((proj, idx) => {
         return (
           <Projects className="projects-container" key={idx}>
-            <ProjectHeading>{proj.HEADING}</ProjectHeading>
+            <ProjectHeading>{proj.heading}</ProjectHeading>
             <ProjectImageContainer>
               <ProjectImage
                 alt="Preview screenshot of project"
-                src={proj.SCREENSHOT}
+                src={process.env.PUBLIC_URL + proj.screenshot}
               />
             </ProjectImageContainer>
-            <ProjectParagraph>{proj.DESCRIPTION}</ProjectParagraph>
+            <ProjectParagraph>{proj.desc}</ProjectParagraph>
+            {/* TODO: could add tags for what framework/lang was used in this project with a simple forEach on an array with tags, outputting colored boxes based on what lang it is. */}
             <ButtonWrapper>
               <BtnGreen
                 as="a"
                 target="_blank"
                 rel="noreferrer"
-                href={proj.URL_REPOSITORY}
+                href={proj.repositoryUrl}
               >
-                GITHUB
+                {t("projects.buttons.github").toUpperCase()}
               </BtnGreen>
               <BtnGreen
                 as="a"
                 target="_blank"
                 rel="noreferrer"
-                href={proj.URL_LIVE}
+                href={proj.liveUrl}
               >
-                LIVE
+                {t("projects.buttons.demo").toUpperCase()}
               </BtnGreen>
             </ButtonWrapper>
           </Projects>
