@@ -1,0 +1,68 @@
+{
+  "navbar": {
+    "home": "Hjem",
+    "about": "Om meg",
+    "projects": "Prosjekter",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "heading": "Jeg er <1>Aleksander</1> Grubstad Hoff",
+    "preHeading": "Hei",
+    "subHeading": "Frontend utvikler | React",
+    "btnText": "Mine prosjekter"
+  },
+  "about": {
+    "heading": "Om meg",
+    "skillHeading": "Ferdigheter",
+    "aboutText": "<1>For tiden lærer jeg meg å kode via Kodehode, på fritiden liker jeg å hoste forskjellige program via Docker på VPS og Raspberry PI, spille interessante spill som ofte tar opp for mye tid. En av mine store lidenskaper er matlaging og samle på japanske kokkekniver.</1> <2>De siste 6 måndene har jeg gjort et dyp dykk i koding, som jeg finner ekstremt artig og givende. Jeg er hovedsaklig interessert i hvordan applikasjoner og nettsider fungerer på back-end siden, men liker også prossessen med front-end. Så målet er å bli en kompetent fullstack utvikler.</2>"
+  },
+  "projects": {
+    "heading": "Projects",
+    "project": [
+      {
+        "name": "Planetarium",
+        "heading": "Planetarium",
+        "desc": "Se informasjon om solsystemet. Dette var en gruppeoppgave hvor målsettingen var å tilegne seg mer kunnskap rundt git og git workflow når man jobber i team. React ble valgt som framework",
+        "repositoryUrl": "https://github.com/aleksander-kodehode/planetarium",
+        "liveUrl": "https://aleksander-kodehode.github.io/planetarium/#/home",
+        "screenshot": "/img/planetarium.png",
+        "id": 1
+      },
+      {
+        "name": "PokeDex",
+        "heading": "PokeDex",
+        "desc": "Sorter Pokemon basert på generasjon eller søk på en bestemt pokemon du vil se. Klikk på en pokemon i listen for å se mer informasjon om den pokemonen. API henter data basert på parametrene. Bygget med Javascript, HTML & CSS",
+        "repositoryUrl": "https://github.com/aleksander-kodehode/pokeDex",
+        "liveUrl": "https://aleksander-kodehode.github.io/pokeDex/",
+        "screenshot": "/img/pokeDex.png",
+        "id": 2
+      },
+      {
+        "name": "PasswordGenerator",
+        "heading": "Password Generator",
+        "desc": "Passord generator hvor man kan sette parameter om passordet skal inneholde symboler og tall, og bestemme lengden. Bygget med Javascript, HTML og CSS",
+        "repositoryUrl": "https://github.com/aleksander-kodehode/password-generator/",
+        "liveUrl": "https://aleksander-kodehode.github.io/password-generator/",
+        "screenshot": "/img/pswdGen.png",
+        "id": 3
+      },
+      {
+        "name": "TodoList",
+        "heading": "Todo List",
+        "desc": "En Todo List som lagrer oppgaver i localStorage, slik at oppgavene vises når siden lastes inn på nytt. Bygget med Javascript, HTML & CSS ",
+        "repositoryUrl": "https://github.com/aleksander-kodehode/todoList",
+        "liveUrl": "https://aleksander-kodehode.github.io/todoList/",
+        "screenshot": "/img/todoList.png",
+        "id": 4
+      }
+    ],
+    "buttons": {
+      "github": "Github",
+      "demo": "Demo"
+    }
+  },
+  "contact": {
+    "heading": "Kontakt Meg",
+    "text": "Om det er noe du lurer på er det bare å ta kontakt"
+  }
+}

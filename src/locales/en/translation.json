@@ -1,0 +1,68 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About me",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "heading": "I'm <1>Aleksander</1> Grubstad Hoff",
+    "preHeading": "Hello",
+    "subHeading": "Frontend developer | React",
+    "btnText": "My Projects"
+  },
+  "about": {
+    "heading": "About me",
+    "skillHeading": "Skills",
+    "aboutText": "<1>I’m currently learning how to code through “Kodehode”, in my spare time I enjoy messing around with selfhosted services and apps through Docker, playing interesting games that takes up way too much time. One of my big passions is cooking and collecting handmade Japanese knifes.</1> <2>Recently I have been doing a deep dive into the world of coding, which I find extremely fun and instructive. I am mostly interested in how apps and websites work on the backend, but I find that styling and making things look good is also a lot of fun!</2>"
+  },
+  "projects": {
+    "heading": "Projects",
+    "project": [
+      {
+        "name": "Planetarium",
+        "heading": "Planetarium",
+        "desc": "Get information about our solar system and watch a live model of it. This was a team exercise with the goal of getting better understanding of git. Built using React",
+        "repositoryUrl": "https://github.com/aleksander-kodehode/planetarium",
+        "liveUrl": "https://aleksander-kodehode.github.io/planetarium/#/home",
+        "screenshot": "/img/planetarium.png",
+        "id": 1
+      },
+      {
+        "name": "PokeDex",
+        "heading": "PokeDex",
+        "desc": "Browse pokemon based on generations or search for one you would like to see. Click on a pokemon to get more stats of that pokemon. Uses API to fetch data based on parameters, built using Javascript, HTML & CSS",
+        "repositoryUrl": "https://github.com/aleksander-kodehode/pokeDex",
+        "liveUrl": "https://aleksander-kodehode.github.io/pokeDex/",
+        "screenshot": "/img/pokeDex.png",
+        "id": 2
+      },
+      {
+        "name": "PasswordGenerator",
+        "heading": "Password Generator",
+        "desc": "Simple password generator that allows you to set certain parameters of how you want the password to be, such as password length, symbols and numbers. With a copy to clipboard feature. Built using Javascript, HTML & CSS",
+        "repositoryUrl": "https://github.com/aleksander-kodehode/password-generator/",
+        "liveUrl": "https://aleksander-kodehode.github.io/password-generator/",
+        "screenshot": "/img/pswdGen.png",
+        "id": 3
+      },
+      {
+        "name": "TodoList",
+        "heading": "Todo List",
+        "desc": "Todo list that stores tasks in localStorage. Built using Javascript, HTML & CSS",
+        "repositoryUrl": "https://github.com/aleksander-kodehode/todoList",
+        "liveUrl": "https://aleksander-kodehode.github.io/todoList/",
+        "screenshot": "/img/todoList.png",
+        "id": 4
+      }
+    ],
+    "buttons": {
+      "github": "Github",
+      "demo": "Live"
+    }
+  },
+  "contact": {
+    "heading": "Contact Me",
+    "text": "Feel free to contact me for any question you may have"
+  }
+}
