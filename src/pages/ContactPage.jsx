@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import WaveBgAlt from "../components/WaveBgAlt";
 import {
   ContactContainer,
@@ -9,14 +10,15 @@ import {
   SectionHeading,
 } from "../componentsStyled/typographyStyled";
 const ContactPage = () => {
+  const { t } = useTranslation();
   return (
     <>
       <WaveBgAlt />
       <MainWrapperAlt id="contact">
         <ContactSpacer>
-          <SectionHeading>Contact Me</SectionHeading>
+          <SectionHeading>{t("contact.heading")}</SectionHeading>
           <ContactContainer>
-            <p>Feel free to contact me for any question you may have</p>
+            <p>{t("contact.text")}</p>
             <Hyperlink href="mailto:aleksander@grubstad.no">
               aleksander@grubstad.no
             </Hyperlink>

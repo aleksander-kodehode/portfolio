@@ -1,3 +1,4 @@
+import { Trans, useTranslation } from "react-i18next";
 import { BtnGreenScroll } from "../componentsStyled/buttonsStyled";
 import { navHeight } from "../componentsStyled/navStyles";
 import {
@@ -15,22 +16,26 @@ import { TEXT_AND_CONTENT } from "./text/textContent";
 const content = TEXT_AND_CONTENT.WELCOME_PAGE;
 
 const HomePage = () => {
+  const { t } = useTranslation();
   return (
     <FillScreen id="home">
       <FlexContainerRow>
         <GreetingsDiv>
           <ImgContainer>
-            <ProfilePic src={content.IMAGES[2]} alt="Portrait"></ProfilePic>
+            <ProfilePic src={content.IMAGES} alt="Portrait"></ProfilePic>
           </ImgContainer>
           <div>
             <PreHeading>
-              <PurpleText>- </PurpleText>Hello
+              <PurpleText>- </PurpleText>
+              {t("home.preHeading")}
             </PreHeading>
             <WelcomeHeading>
-              I'm <PurpleText>Aleksander</PurpleText> Grubstad Hoff
+              <Trans i18nKey="home.heading">
+                I'm <PurpleText>Aleksander</PurpleText> Grubstad Hoff
+              </Trans>
             </WelcomeHeading>
           </div>
-          <p>Frontend developer | React</p>
+          <p>{t("home.subHeading")}</p>
           <div>
             {/* TODO: Make down arrow with animations */}
             <BtnGreenScroll
@@ -40,7 +45,7 @@ const HomePage = () => {
               smooth={true}
               offset={-navHeight}
             >
-              MY PROJECTS
+              {t("home.btnText").toUpperCase()}
             </BtnGreenScroll>
           </div>
         </GreetingsDiv>
