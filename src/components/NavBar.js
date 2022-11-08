@@ -1,12 +1,10 @@
 import { Nav, NavList, NavItems } from "../componentsStyled/navStyles";
-import { TEXT_AND_CONTENT } from "../pages/text/textContent";
 import Switch from "./Switch";
 import { navHeight } from "../componentsStyled/navStyles";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 
 const NavBar = () => {
-  const NAVIGATION_BAR = TEXT_AND_CONTENT.NAVIGATION_BAR;
   const { t } = useTranslation();
   return (
     <Nav>
