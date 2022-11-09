@@ -18,7 +18,7 @@ export const ReactFlags = styled(ReactFlagsSelect)`
     }
   }
   & ul {
-    background: ${(props) => props.theme.secondaryBackground};
+    background: ${(props) => props.theme.white};
   }
 `;
 
