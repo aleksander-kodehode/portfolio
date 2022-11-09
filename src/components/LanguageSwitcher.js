@@ -6,9 +6,10 @@ import {
 import { useState } from "react";
 
 const LanguageSwitcher = () => {
-  const [selected, setSelected] = useState("GB");
   const { i18n } = useTranslation();
-  console.log(selected);
+  const [selected, setSelected] = useState(
+    i18n.language === "en" ? "GB" : "NO"
+  );
   return (
     <LangSelectContainer>
       <ReactFlags
