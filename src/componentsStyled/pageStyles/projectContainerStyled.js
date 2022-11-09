@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BtnGreenScroll } from "../buttonsStyled";
+import { BtnGreenScroll } from "../buttonsStyles";
 import { device } from "../mediaQueriesBreakPoints";
 import { FlexContainerRow } from "./homePageStyles";
 

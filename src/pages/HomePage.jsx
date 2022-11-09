@@ -1,5 +1,5 @@
 import { Trans, useTranslation } from "react-i18next";
-import { BtnGreenScroll } from "../componentsStyled/buttonsStyled";
+import { BtnGreenScroll } from "../componentsStyled/buttonsStyles";
 import { navHeight } from "../componentsStyled/navStyles";
 import {
   FillScreen,

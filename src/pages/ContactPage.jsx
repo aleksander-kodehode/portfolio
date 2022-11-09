@@ -8,7 +8,7 @@ import { MainWrapperAlt } from "../componentsStyled/pageStyles/mainWrapperStyle"
 import {
   Hyperlink,
   SectionHeading,
-} from "../componentsStyled/typographyStyled";
+} from "../componentsStyled/typographyStyles";
 const ContactPage = () => {
   const { t } = useTranslation();
   return (

@@ -9,7 +9,7 @@ import {
   TextContentWrapper,
 } from "../componentsStyled/pageStyles/aboutMeStyles";
 import { MainWrapperAlt } from "../componentsStyled/pageStyles/mainWrapperStyle";
-import { SectionHeading } from "../componentsStyled/typographyStyled";
+import { SectionHeading } from "../componentsStyled/typographyStyles";
 
 const AboutMePage = () => {
   const { t } = useTranslation();
