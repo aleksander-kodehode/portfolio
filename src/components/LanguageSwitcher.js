@@ -1,20 +1,30 @@
 import { useTranslation } from "react-i18next";
 import {
   LangSelectContainer,
-  Selector,
+  ReactFlags,
 } from "../componentsStyled/LanguageSwitcherStyles";
+import { useState } from "react";
 
 const LanguageSwitcher = () => {
+  const [selected, setSelected] = useState("GB");
   const { i18n } = useTranslation();
+  console.log(selected);
   return (
     <LangSelectContainer>
-      <Selector
-        value={i18n.language}
-        onChange={(e) => i18n.changeLanguage(e.target.value)}
-      >
-        <option value="en">English</option>
-        <option value="nb">Norsk</option>
-      </Selector>
+      <ReactFlags
+        selected={selected}
+        onSelect={(code) => {
+          setSelected(code);
+          code === "GB" ? i18n.changeLanguage("en") : i18n.changeLanguage("nb");
+        }}
+        countries={["GB", "NO"]}
+        showSelectedLabel={false}
+        showOptionLabel={true}
+        customLabels={{ GB: "English", NO: "Norsk" }}
+        selectedSize={20}
+        optionsSize={14}
+        fullWidth={false}
+      />
     </LangSelectContainer>
   );
 };
