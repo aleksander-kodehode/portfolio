@@ -11,7 +11,6 @@ import { darkTheme, lightTheme } from "./theme";
 
 const App = () => {
   const [isToggled, setIsToggled] = useState(true);
-  console.log(isToggled);
   return (
     <themeContext.Provider value={{ isToggled, setIsToggled }}>
       {/* BUG: Site flashes on reload due to the themeProvide  */}

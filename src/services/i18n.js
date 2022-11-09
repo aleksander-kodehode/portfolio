@@ -27,12 +27,9 @@ i18next
     },
     backend: {
       loadPath: "../publ/locales/{{lng}}/{{ns}}",
-      parse: function (data) {
-        console.log(data);
-      },
     },
     //TODO: Disable before production build
-    debug: true,
+    debug: false,
   });
 
 export default i18next;
