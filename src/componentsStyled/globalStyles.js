@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
 
     }
     .nav-bar-link-active {
-        color: #7f5af0 !important;
+        color: ${(props) => props.theme.purple} !important;
     }
     
 `;
