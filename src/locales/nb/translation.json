@@ -17,7 +17,7 @@
     "aboutText": "<1>For tiden lærer jeg meg å kode via Kodehode, på fritiden liker jeg å hoste forskjellige program via Docker på VPS og Raspberry PI, spille interessante spill som ofte tar opp for mye tid. En av mine store lidenskaper er matlaging og samle på japanske kokkekniver.</1> <2>De siste 6 måndene har jeg gjort et dyp dykk i koding, som jeg finner ekstremt artig og givende. Jeg er hovedsaklig interessert i hvordan applikasjoner og nettsider fungerer på back-end siden, men liker også prossessen med front-end. Så målet er å bli en kompetent fullstack utvikler.</2>"
   },
   "projects": {
-    "heading": "Projects",
+    "heading": "Prosjekter",
     "project": [
       {
         "name": "Planetarium",
