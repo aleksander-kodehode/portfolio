@@ -1,15 +1,15 @@
-import { Nav, NavList, NavItems } from "../componentsStyled/navStyles";
+import { NavList, NavItems } from "../../componentsStyled/navStyles";
 import Switch from "./Switch";
-import { navHeight } from "../componentsStyled/navStyles";
+import { navHeight } from "../../componentsStyled/navStyles";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 
-const NavBar = () => {
+const HorizontalNav = ({ open }) => {
   const { t } = useTranslation();
   return (
-    <Nav>
+    <>
       <LanguageSwitcher />
-      <NavList>
+      <NavList open={open}>
         <li>
           <NavItems
             to="home"
@@ -57,8 +57,8 @@ const NavBar = () => {
       </NavList>
 
       <Switch />
-    </Nav>
+    </>
   );
 };
 
-export default NavBar;
+export default HorizontalNav;

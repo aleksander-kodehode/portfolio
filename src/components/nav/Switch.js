@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import { themeContext } from "../context/themeContext";
+import { themeContext } from "../../context/themeContext";
 import { Icon } from "@iconify/react";
 import styled, { keyframes } from "styled-components";
-import { device } from "../componentsStyled/mediaQueriesBreakPoints";
+import { device } from "../../componentsStyled/mediaQueriesBreakPoints";
 
 const rotate = keyframes`
     from {
@@ -28,7 +28,7 @@ const Button = styled.button`
   animation: ${rotate} 1s linear;
   transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 150ms;
   @media ${device.tabletS} {
-    margin: 0 2.5rem 0 1rem;
+    margin-right: 5rem;
   }
   &:hover,
   :active {

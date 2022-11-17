@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ThemeProvider } from "styled-components";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/nav/NavBar";
 import GlobalStyle from "./componentsStyled/globalStyles";
 import AboutMePage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";

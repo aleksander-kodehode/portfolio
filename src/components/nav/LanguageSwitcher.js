@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import {
   LangSelectContainer,
   ReactFlags,
-} from "../componentsStyled/LanguageSwitcherStyles";
+} from "../../componentsStyled/LanguageSwitcherStyles";
 import { useState } from "react";
 
 const LanguageSwitcher = () => {

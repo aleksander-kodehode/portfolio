@@ -17,13 +17,6 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 1;
-  @media ${device.tabletS} {
-    flex-direction: column;
-    height: fit-content;
-    padding: 10px 0;
-    justify-content: center;
-    align-items: center;
-  }
 `;
 export const NavList = styled.ul`
   list-style: none;
@@ -33,8 +26,16 @@ export const NavList = styled.ul`
   justify-content: center;
   @media ${device.tabletS} {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    background-color: ${(props) => props.theme.secondaryBackground};
+    position: fixed;
+    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    padding-top: 3.5rem;
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
   }
 `;
 export const NavItems = styled(Link)`
