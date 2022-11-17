@@ -47,6 +47,7 @@ export const NavItems = styled(Link)`
   font-size: 1.3rem;
   font-weight: 700;
   text-decoration: none;
+  transition: color cubic-bezier(0.445, 0.05, 0.55, 0.95) 200ms;
   cursor: pointer;
   &:hover {
     color: #7f5af0;
