@@ -22,7 +22,8 @@
       {
         "name": "Planetarium",
         "heading": "Planetarium",
-        "desc": "Se informasjon om solsystemet. Dette var en gruppeoppgave hvor målsettingen var å tilegne seg mer kunnskap rundt git og git workflow når man jobber i team. React ble valgt som framework",
+        "desc": "Se informasjon om solsystemet. Dette var en gruppeoppgave hvor målsettingen var å tilegne seg mer kunnskap rundt git og git workflow når man jobber i team.",
+        "tags": ["REACTJS"],
         "repositoryUrl": "https://github.com/aleksander-kodehode/planetarium",
         "liveUrl": "https://aleksander-kodehode.github.io/planetarium/#/home",
         "screenshot": "/img/planetarium.png",
@@ -31,7 +32,8 @@
       {
         "name": "PokeDex",
         "heading": "PokeDex",
-        "desc": "Sorter Pokemon basert på generasjon eller søk på en bestemt pokemon du vil se. Klikk på en pokemon i listen for å se mer informasjon om den pokemonen. API henter data basert på parametrene. Bygget med Javascript, HTML & CSS",
+        "desc": "Sorter Pokemon basert på generasjon eller søk på en bestemt pokemon du vil se. Klikk på en pokemon i listen for å se mer informasjon om den pokemonen. API henter data basert på parametrene.",
+        "tags": ["JS", "HTML", "CSS"],
         "repositoryUrl": "https://github.com/aleksander-kodehode/pokeDex",
         "liveUrl": "https://aleksander-kodehode.github.io/pokeDex/",
         "screenshot": "/img/pokeDex.png",
@@ -40,7 +42,8 @@
       {
         "name": "PasswordGenerator",
         "heading": "Password Generator",
-        "desc": "Passord generator hvor man kan sette parameter om passordet skal inneholde symboler og tall, og bestemme lengden. Bygget med Javascript, HTML og CSS",
+        "desc": "Passord generator hvor man kan sette parameter om passordet skal inneholde symboler og tall, og bestemme lengden.",
+        "tags": ["JS", "HTML", "CSS"],
         "repositoryUrl": "https://github.com/aleksander-kodehode/password-generator/",
         "liveUrl": "https://aleksander-kodehode.github.io/password-generator/",
         "screenshot": "/img/pswdGen.png",
@@ -49,7 +52,8 @@
       {
         "name": "TodoList",
         "heading": "Todo List",
-        "desc": "En Todo List som lagrer oppgaver i localStorage, slik at oppgavene vises når siden lastes inn på nytt. Bygget med Javascript, HTML & CSS ",
+        "desc": "En Todo List som lagrer oppgaver i localStorage, slik at oppgavene vises når siden lastes inn på nytt.",
+        "tags": ["JS", "HTML", "CSS"],
         "repositoryUrl": "https://github.com/aleksander-kodehode/todoList",
         "liveUrl": "https://aleksander-kodehode.github.io/todoList/",
         "screenshot": "/img/todoList.png",

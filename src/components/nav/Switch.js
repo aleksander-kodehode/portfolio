@@ -1,9 +1,17 @@
 import { useContext } from "react";
-import { themeContext } from "../context/themeContext";
+import { themeContext } from "../../context/themeContext";
 import { Icon } from "@iconify/react";
-import styled from "styled-components";
-import { device } from "../componentsStyled/mediaQueriesBreakPoints";
+import styled, { keyframes } from "styled-components";
+import { device } from "../../componentsStyled/mediaQueriesBreakPoints";
 
+const rotate = keyframes`
+    from {
+      transform: rotate(80deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+    `;
 const Button = styled.button`
   margin-right: 30px;
   margin-left: 30px;
@@ -17,9 +25,10 @@ const Button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 250ms;
+  animation: ${rotate} 1s linear;
+  transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 150ms;
   @media ${device.tabletS} {
-    margin: 0 2.5rem 0 1rem;
+    margin-right: 5rem;
   }
   &:hover,
   :active {
