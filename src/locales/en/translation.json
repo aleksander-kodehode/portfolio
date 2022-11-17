@@ -21,8 +21,10 @@
     "project": [
       {
         "name": "Planetarium",
+        "proj_type": "WEBSITE",
         "heading": "Planetarium",
-        "desc": "Get information about our solar system and watch a live model of it. This was a team exercise with the goal of getting better understanding of git. Built using React",
+        "desc": "Get information about our solar system and watch a live model of it. This was a team exercise with the goal of getting better understanding of git.",
+        "tags": ["REACTJS"],
         "repositoryUrl": "https://github.com/aleksander-kodehode/planetarium",
         "liveUrl": "https://aleksander-kodehode.github.io/planetarium/#/home",
         "screenshot": "/img/planetarium.png",
@@ -30,8 +32,10 @@
       },
       {
         "name": "PokeDex",
+        "proj_type": "WEB APP",
         "heading": "PokeDex",
-        "desc": "Browse pokemon based on generations or search for one you would like to see. Click on a pokemon to get more stats of that pokemon. Uses API to fetch data based on parameters, built using Javascript, HTML & CSS",
+        "desc": "Browse pokemon based on generations or search for one you would like to see. Click on a pokemon to get more stats of that pokemon. Uses API to fetch data based on parameters.",
+        "tags": ["JS", "HTML", "CSS"],
         "repositoryUrl": "https://github.com/aleksander-kodehode/pokeDex",
         "liveUrl": "https://aleksander-kodehode.github.io/pokeDex/",
         "screenshot": "/img/pokeDex.png",
@@ -39,8 +43,10 @@
       },
       {
         "name": "PasswordGenerator",
+        "proj_type": "WEB APP",
         "heading": "Password Generator",
-        "desc": "Simple password generator that allows you to set certain parameters of how you want the password to be, such as password length, symbols and numbers. With a copy to clipboard feature. Built using Javascript, HTML & CSS",
+        "desc": "Simple password generator that allows you to set certain parameters of how you want the password to be, such as password length, symbols and numbers. With a copy to clipboard feature.",
+        "tags": ["JS", "HTML", "CSS"],
         "repositoryUrl": "https://github.com/aleksander-kodehode/password-generator/",
         "liveUrl": "https://aleksander-kodehode.github.io/password-generator/",
         "screenshot": "/img/pswdGen.png",
@@ -48,8 +54,10 @@
       },
       {
         "name": "TodoList",
+        "proj_type": "WEB APP",
         "heading": "Todo List",
-        "desc": "Todo list that stores tasks in localStorage. Built using Javascript, HTML & CSS",
+        "desc": "Todo list that stores tasks in localStorage.",
+        "tags": ["JS", "HTML", "CSS"],
         "repositoryUrl": "https://github.com/aleksander-kodehode/todoList",
         "liveUrl": "https://aleksander-kodehode.github.io/todoList/",
         "screenshot": "/img/todoList.png",
